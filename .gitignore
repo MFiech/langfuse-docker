@@ -1,0 +1,55 @@
+# Environment variables
+.env
+.env.local
+.env.backup
+
+# Data directories (contains database files and volumes)
+data/
+!data/.gitkeep
+
+# Docker volumes (if using bind mounts)
+postgres-data/
+clickhouse-data/
+redis-data/
+minio-data/
+
+# Logs
+*.log
+logs/
+docker-compose.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Backup files
+*.backup
+*.bak
+
+# Docker override files
+docker-compose.override.yml
+
+# SSL/TLS certificates (if added)
+certs/
+ssl/
+
+# Local development scripts
+dev-scripts/
+test-scripts/
+
+# Cache
+.cache/

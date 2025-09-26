@@ -176,9 +176,7 @@ services:
       - CLICKHOUSE_DATABASE=default
       - CLICKHOUSE_MIGRATION_URL=clickhouse://clickhouse:9000
       - CLICKHOUSE_CLUSTER_ENABLED=false
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - REDIS_AUTH=
+      - REDIS_URL=redis://redis:6379
       - LANGFUSE_S3_EVENT_UPLOAD_BUCKET=langfuse
       - LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID=langfuse
       - LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY=langfuse123
